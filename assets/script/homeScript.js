@@ -1,15 +1,18 @@
 const generateButton = document.getElementById('generate');
 const favoritesButton = document.getElementById('favorites');
+let queryString = '';
 
 function favoritesPage(){
     window.location = './favorites.html'
 }
 
 function buildActivityType(){
-    var activities = document.querySelectorAll('input[class=activity]');
-    for(let i=0; i< activities.length; i++){
-        if(activities[i].checked){
-            console.log(activities[i].id);
+    var activities = document.querySelectorAll('input[class=activity]:checked');
+    if (activities.length == 9){
+    }else{
+        queryString += 'type=';
+        for(let i=0; i < activities.length; i++){
+            queryString += `${activities[i].id}`
         }
     }
 }
@@ -27,7 +30,8 @@ function buildParticipants(){
 }
 
 function buildWhen(){
-    var when = document.querySelectorAll('[name="accessibility"]');
+    var when = document.querySelectorAll('[name="accessibility"]:checked');
+    queryString += `&accessibility=${when[0].id}`
     console.log(when)
 
 }
@@ -37,12 +41,12 @@ function buildQuery(event){
     buildActivityType();
     //buildCost();
     //buildParticipants();
-    //buildWhen();
+    buildWhen();
     changePage();
 }
 
 function changePage(){
-    document.location = './landingpage.html?q=';
+    document.location = './landingpage.html?q='+queryString;
 }
 
 generateButton.addEventListener('click', buildQuery )
