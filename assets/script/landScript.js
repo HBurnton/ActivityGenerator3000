@@ -2,6 +2,7 @@ var searchPhrase= '';
 var activity = '';
 const anotherVideo = document.getElementById('anotherSuggestion');
 const viewFavorites = document.getElementById('viewFavorites');
+const randomSuggestion = document.getElementById('random');
 const videoContainer = document.getElementById('video');
 const container = document.querySelector('#container');
 const googleAPIkey= 'AIzaSyCsox4guV-52fcE4Q0nAtbVMQQy4N-oae4';
@@ -22,7 +23,7 @@ function loadVideo(){
     .then((response)=>response.json())
     .then((data) =>{
         activity = data.activity;
-        searchPhrase = `How to ${data.activity}`
+        searchPhrase = `How to ${data.activity.toLowerCase()}`
         console.log(searchPhrase)
     
         fetch(youtubeAPI())
@@ -49,7 +50,8 @@ function goToFavorites(){
 loadVideo();
 
 anotherVideo.addEventListener('click', loadVideo)
-viewFavorites.addEventListener('click',goToFavorites)
+viewFavorites.addEventListener('click', goToFavorites)
+randomSuggestion.addEventListener('click', loadVideo)
 
 //Problem:
 
