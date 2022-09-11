@@ -13,33 +13,50 @@
         The Activity Generator 3000
     </h1>
     <form>
-        <input id="education" type="checkbox"><label for="education">Education</label> 
-        <input id="recreation" type="checkbox"> <label for="recreation">Recreation</label>
-        <input id="social" type="checkbox"><label for="social">Social</label>
-        <input id="diy" type="checkbox"><label for="diy">DIY</label>
-        <input id="charity" type="checkbox"><label for="charity">Charity</label>
-        <input id="cooking" type="checkbox"><label for="cooking">Cooking</label>
-        <input id="relaxation" type="checkbox"><label for="relaxation">Relaxation</label>
-        <input id="music" type="checkbox"><label for="music">Music</label>
-        <input id="busy-work" type="checkbox"><label for="busy-work">Busy Work</label>
-        <select id="cost" name="Cost">
-            <option value="$">$</option>
-            <option value="$$">$$</option>
-            <option value="$$$">$$$</option>
-        </select>
-        <select id="people" name="Participants">
-            <option value="none">None</option>
-            <option value="Few">Few</option>
-            <option value="Many">many</option>
-        </select>
-        <input type="radio" id="now" name="Accessibility" value="Now"><label for="now">I can do this right now</label>
-        <input type="radio" id="effort" name="Accessibility" value="effort"><label for="effort">I can do this today</label>
-        <input type="radio" id="maxEffort" name="Accessibility" value="maxEffort"><label for="maxEffort">I can do this this week</label>
+        <div>
+            <h2>Please select one or more activity types</h2>
+            <input class="activity" id="education" type="checkbox" checked><label for="education">Education</label> 
+            <input class="activity" id="recreation" type="checkbox"> <label for="recreation">Recreation</label>
+            <input class="activity" id="social" type="checkbox"><label for="social">Social</label>
+            <input class="activity" id="diy" type="checkbox"><label for="diy">DIY</label>
+            <input class="activity" id="charity" type="checkbox"><label for="charity">Charity</label>
+            <input class="activity" id="cooking" type="checkbox"><label for="cooking">Cooking</label>
+            <input class="activity" id="relaxation" type="checkbox"><label for="relaxation">Relaxation</label>
+            <input class="activity" id="music" type="checkbox"><label for="music">Music</label>
+            <input class="activity" id="busy-work" type="checkbox"><label for="busy-work">Busy Work</label>
+        </div>
+
+        <div>
+            <h2>Select How Much You Would Want To Spend</h2>
+            <select id="cost" name="cost">
+                <option value="lowCost">$</option>
+                <option value="medCost">$$</option>
+                <option value="highCost">$$$</option>
+            </select>
+        </div>
+
+        <div>
+            <h2>How Many Participants Should There Be?</h2>
+            <select id="people" name="participants">
+                <option value="none">None</option>
+                <option value="few">Few</option>
+                <option value="many">many</option>
+            </select>
+        </div>
+        
+        <div>
+            <h2>How Soon Do You Want To Do This?</h2>
+            <input type="radio" id="now" name="accessibility" value="now" checked><label for="now">I can do this right now</label>
+            <input type="radio" id="effort" name="accessibility" value="effort"><label for="effort">I can do this today</label>
+            <input type="radio" id="maxEffort" name="accessibility" value="maxEffort"><label for="maxEffort">I can do this this week</label>
+        </div>
     </form>
+
     <div class="buttons">
-        <button class="button is-primary" type="button">Generate</button>
-        <button class="button is-primary" type="button">My Favorites</button>
+        <button class="button is-primary" type="button" id="generate">Generate</button>
+        <button class="button is-primary" type="button" id="favorites">My Favorites</button>
     </div>
+
     <h3>
         Description
     </h3>
@@ -49,6 +66,6 @@
             with a Youtube video teaching you how to do said activity. If you really like a choice then you can add the choice to 
             your favorites, by clicking the favorites button, so that you can view the video later. 
         </p>
-    <script src="assets/script/script.js"></script>
+    <script src="assets/script/homeScript.js"></script>
 </body>
 </html>
