@@ -38,11 +38,11 @@ function buildQuery(event){
     //buildCost();
     //buildParticipants();
     //buildWhen();
-    //changePage();
+    changePage();
 }
 
 function changePage(){
-    //document.location = './landingpage.html?q=';
+    document.location = './landingpage.html?q=';
 }
 
 generateButton.addEventListener('click', buildQuery )
