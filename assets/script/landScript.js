@@ -17,6 +17,11 @@ let boredAPI = "http://www.boredapi.com/api/activity/";
 boredAPI = window.localStorage.getItem('boredApiUrl');
 console.log(boredAPI)
 
+function loadSimilar(){
+    boredAPI = window.localStorage.getItem('boredApiUrl');
+    loadVideo();
+}
+
 //Problem: attach Parameters from HTML
 
 function loadFavorites() {
@@ -26,6 +31,11 @@ function loadFavorites() {
     } else {
         console.log('nothing here')
     }
+}
+
+function loadRandomVideo(){
+    boredAPI = "http://www.boredapi.com/api/activity/";
+    loadVideo();
 }
 
 function loadVideo() {
@@ -71,7 +81,7 @@ loadFavorites();
 
 anotherVideo.addEventListener('click', loadVideo)
 viewFavorites.addEventListener('click', goToFavorites)
-randomSuggestion.addEventListener('click', loadVideo)
+randomSuggestion.addEventListener('click', loadRandomVideo)
 addToFavorites.addEventListener('click', addSuggestionToFavs)
 
 //Problem:build expanded bored API call:
