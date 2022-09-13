@@ -10,6 +10,7 @@ const googleAPIkey = 'AIzaSyCsox4guV-52fcE4Q0nAtbVMQQy4N-oae4';
 const youtubeAPI = function () { return `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${searchPhrase}&key=${googleAPIkey}` }
 var favoritesList = [];
 let videoId = '';
+var buttons = document.querySelector('.buttons');
 
 //Simple Version: User Clicks Button On Home Page, Sent to Landing Page
 
@@ -34,14 +35,32 @@ function loadFavorites() {
 }
 
 function loadRandomVideo(){
+    console.log(buttons.style.display)
+    if(buttons.style.display == 'none'){
+        buttons.style.display = 'flex';
+    }
     boredAPI = "http://www.boredapi.com/api/activity/";
     loadVideo();
+}
+
+function displayError(){
+    videoContainer.innerHTML = `<h2 class='title is-2'>Sorry! No available suggestions!<h2><p>Please feel free to add suggestions at <a href='https://www.boredapi.com/contributing'>boredapi.com</a></p>`;
+    var randomButton = document.createElement('button');
+    randomButton.className = 'button is-primary';
+    randomButton.textContent = 'Click Here for a Random Suggestion';
+    randomButton.addEventListener('click', loadRandomVideo);
+    buttons.style.display = 'none';
+    videoContainer.appendChild(randomButton);
 }
 
 function loadVideo() {
     fetch(boredAPI)
         .then((response) => response.json())
         .then((data) => {
+            console.log(data)
+            if('error' in data){
+                displayError();
+            }else{
             activity = data.activity;
             searchPhrase = `How to ${data.activity.toLowerCase()}`
             fetch(youtubeAPI())
@@ -59,7 +78,7 @@ function loadVideo() {
                     }
                 })
 
-        });
+}});
 
 }
 
