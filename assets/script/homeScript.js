@@ -8,6 +8,7 @@ function favoritesPage(){
 
 function buildActivityType(){
     var activities = document.querySelectorAll('input[class=activity]:checked');
+    //if all checkboxes are checked, does not add anything to query as this is the default
     if (activities.length == 9){
     }else{
         for(let i=0; i < activities.length; i++){
@@ -33,6 +34,29 @@ function buildCost(){
 
 }
 
+function buildQuery(event){
+    event.preventDefault();
+    buildActivityType();
+    buildCost();
+    //buildParticipants();
+    //buildWhen();
+    changePage();
+}
+
+function changePage(){
+    boredAPI = 'http://www.boredapi.com/api/activity?'+ queryString;
+    queryString = '';
+    window.localStorage.setItem('boredApiUrl', boredAPI);
+    document.location = './landingpage.html';
+
+}
+
+generateButton.addEventListener('click', buildQuery );
+favoritesButton.addEventListener('click', favoritesPage);
+
+/*
+If defining by too many parameters, often too specific and no video returned
+
 function buildParticipants(){
     var participants = document.getElementById('people');
     console.log(participants.value);
@@ -55,25 +79,4 @@ function buildWhen(){
     queryString += `&accessibility=${when[0].id}`
     console.log(when)
 
-}
-
-function buildQuery(event){
-    event.preventDefault();
-    buildActivityType();
-    buildCost();
-    //buildParticipants();
-    //buildWhen();
-    changePage();
-}
-
-function changePage(){
-    boredAPI = 'http://www.boredapi.com/api/activity?'+ queryString;
-    queryString = '';
-    window.localStorage.setItem('boredApiUrl', boredAPI);
-    console.log('hello')
-    document.location = './landingpage.html';
-
-}
-
-generateButton.addEventListener('click', buildQuery )
-favoritesButton.addEventListener('click', favoritesPage)
+} */
