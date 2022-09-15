@@ -7,10 +7,15 @@ const randomSuggestion = document.getElementById('random');
 const videoContainer = document.getElementById('video');
 const addToFavorites = document.getElementById('addToFavorites');
 const container = document.querySelector('#container');
+
 var notification = document.querySelector('.notification');
+
+
+
 let buttons = document.querySelector('.buttons');
 let youtubeAPI = function () { return `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${searchPhrase}&key=${googleAPIkey}` }
 let favoritesList = [];
+
 let videoId = '';
 
 let boredAPI = "http://www.boredapi.com/api/activity/";
