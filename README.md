@@ -7,9 +7,13 @@
     https://hburnton.github.io/ActivityGenerator3000/https://hburnton.github.io/ActivityGenerator3000/
 
 # Usage
-    Using this application could not be easier! Simply select your criteria (examples include: activity category, price of activity, accessibility of activity, and number or participants)(INSERT IMAGE HERE) and then click the "Generate" button! It will load a new page that has the random activity that meets your preferences. If you do not like the activity that is generated, simply click on the "Give Me Another" button and it will generate a new idea using the same preferences you selected before. (INSERT IMAGE HERE)
+    Using this application could not be easier! Simply select your criteria (examples include: activity category, price of activity, accessibility of activity, and number or participants and then click the "Generate" button! It will load a new page that has the random activity that meets your preferences. If you do not like the activity that is generated, simply click on the "Give Me Another" button and it will generate a new idea using the same preferences you selected before. 
 
-    If you liked a suggestion, but are unable to do it at that moment, no problem simply select the "Add to my Favorites" button and the idea will be stored on the "Favorites" page so you can view at your leisure anytime. You can view your favorites by clicking on the "View Favorites" button. (INSERT IMAGE HERE)
+![alt text](./assets/Images/Homepage.png)
+
+    If you liked a suggestion, but are unable to do it at that moment, no problem simply select the "Add to my Favorites" button and the idea will be stored on the "Favorites" page so you can view at your leisure anytime. You can view your favorites by clicking on the "View Favorites" button. 
+
+ ![alt text](./assets/Images/Landing%20page.png)
 # Credits
     Harrison Burnton - https://github.com/HBurnton
     Forrest Lanhart - https://github.com/flanhart
@@ -18,6 +22,7 @@
     Bored API utilized from http://www.boredapi.com/
     youtube API utilized from https://developers.google.com/youtube/v3
     Styling API utilized from https://bulma.io/
+    Jquery toast utilized from https://github.com/kamranahmedse/jquery-toast-plugin
 
 # License
 
@@ -41,4 +46,3 @@
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
 
-hello 
