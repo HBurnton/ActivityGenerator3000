@@ -6,7 +6,7 @@ const randomSuggestion = document.getElementById('random');
 const videoContainer = document.getElementById('video');
 const addToFavorites = document.getElementById('addToFavorites');
 const container = document.querySelector('#container');
-const googleAPIkey = 'AIzaSyCsox4guV-52fcE4Q0nAtbVMQQy4N-oae4';
+const googleAPIkey = 'AIzaSyAm2wZvMbSE3mO6cIp5En-hjMOX0oSxucQ';
 const youtubeAPI = function () { return `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${searchPhrase}&key=${googleAPIkey}` }
 var favoritesList = [];
 let videoId = '';

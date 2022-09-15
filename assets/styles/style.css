@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(29, 29, 29);
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    color: white;
+    padding: 10px;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+p {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+button {
+    margin: auto;
+}
+
+label {
+    color: white;
+    padding: 15px;
+}
+
+title-color {
+    color: white;
+}
