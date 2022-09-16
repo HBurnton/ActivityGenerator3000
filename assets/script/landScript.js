@@ -1,6 +1,6 @@
 var searchPhrase = '';
 var activity = '';
-var googleAPIkey = 'AIzaSyC_6H4IcqUv1r-WxdCfaHGjohtT1uDhKqQ';
+var googleAPIkey = 'AIzaSyBqZzNDB6lXVvcNSKYIvUfDFLa4A3pX-1o';
 const anotherVideo = document.getElementById('anotherSuggestion');
 const viewFavorites = document.getElementById('viewFavorites');
 const randomSuggestion = document.getElementById('random');
