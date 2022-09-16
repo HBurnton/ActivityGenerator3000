@@ -79,7 +79,7 @@ function loadVideo() {
                         console.log(data)
                         try {
                             videoId = data.items[0].id.videoId;
-                            videoContainer.innerHTML = `<div class='content'><h2 class='has-text-dark'>${searchPhrase}</h2><iframe id="ytplayer" type="text/html" width="640" height="360"
+                            videoContainer.innerHTML = `<div class='content'><h2 class='has-text-light'>${searchPhrase}</h2><iframe id="ytplayer" type="text/html" width="640" height="360"
                         src="https://www.youtube.com/embed/${videoId}?autoplay=1&origin=http://example.com"
                         frameborder="0"></iframe></div>`;
                             resetButtons()
