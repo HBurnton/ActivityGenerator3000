@@ -33,3 +33,7 @@ label {
     color: white;
     padding: 15px;
 }
+
+.box p {
+    color:black;
+}
