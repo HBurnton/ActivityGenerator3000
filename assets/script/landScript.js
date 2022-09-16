@@ -18,7 +18,7 @@ let favoritesList = [];
 
 let videoId = '';
 
-let boredAPI = "http://www.boredapi.com/api/activity/";
+let boredAPI = "https://www.boredapi.com/api/activity/";
 if(window.localStorage.getItem('boredApiUrl')){
     boredAPI = window.localStorage.getItem('boredApiUrl');
 }else{
@@ -76,7 +76,6 @@ function loadVideo() {
                 fetch(youtubeAPI())
                     .then((response) => response.json())
                     .then((data) => {
-
                         console.log(data)
                         try {
                             videoId = data.items[0].id.videoId;
