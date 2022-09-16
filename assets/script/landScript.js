@@ -76,7 +76,11 @@ function loadVideo() {
                 fetch(youtubeAPI())
                     .then((response) => response.json())
                     .then((data) => {
-
+                        if('error' in data){ //swaps API Key if error from over query
+                            googleAPIkey = 'AIzaSyBqZzNDB6lXVvcNSKYIvUfDFLa4A3pX-1o';
+                            loadVideo();
+                            console.log('API key switched');
+                        }
                         console.log(data)
                         try {
                             videoId = data.items[0].id.videoId;
