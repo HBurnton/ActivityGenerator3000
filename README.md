@@ -4,7 +4,7 @@
 There are times when somebody knows that they want to do something, but simply have no idea what to choose. This is a problem in the modern world as the internet provides such an astonishing amount of information. This can be overwhelming. This is where the Activity Generator 3000 application comes into play. The Activity Generator 3000 is an random idea generator that not only provides the user with an activity that meets their selected criteria, but also provides a Youtube video that shows them how they might be able to get started. The user-friendly interface also sports a favorites button so that you can go back and view the video of an activity that you found enjoyable or entertaining! 
 
 # Deployed link
-https://hburnton.github.io/ActivityGenerator3000/https://hburnton.github.io/ActivityGenerator3000/
+https://hburnton.github.io/ActivityGenerator3000/
 
 # Usage
 Using this application could not be easier! Simply select your criteria (examples include: activity category, price of activity, accessibility of activity, and number or participants and then click the "Generate" button! It will load a new page that has the random activity that meets your preferences. If you do not like the activity that is generated, simply click on the "Give Me Another" button and it will generate a new idea using the same preferences you selected before. 
