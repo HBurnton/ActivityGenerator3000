@@ -11,7 +11,7 @@ Using this application could not be easier! Simply select your criteria (example
 
 ![alt text](./assets/Images/Homepage.png)
 
-If you liked a suggestion, but are unable to do it at that moment, no problem simply select the "Add to my Favorites" button and the idea will be stored on the "Favorites" page so you can view at your leisure anytime. You can view your favorites by clicking on the "View Favorites" button. 
+If you liked a suggestion, but are unable to do it at that moment, no problem! Simply select the "Add to my Favorites" button and the idea will be stored on the "Favorites" page so you can view at your leisure anytime. You can view your favorites by clicking on the "View Favorites" button. 
 
  ![alt text](./assets/Images/Landing%20page.png)
 # Credits
@@ -45,4 +45,6 @@ Jquery toast utilized from https://github.com/kamranahmedse/jquery-toast-plugin
     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
+
+
 
