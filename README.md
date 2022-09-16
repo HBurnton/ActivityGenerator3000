@@ -6,6 +6,8 @@ There are times when somebody knows that they want to do something, but simply h
 # Deployed link
 https://hburnton.github.io/ActivityGenerator3000/
 
+https://github.com/HBurnton/ActivityGenerator3000 Git Repository 
+
 # Usage
 Using this application could not be easier! Simply select your criteria (examples include: activity category, price of activity, accessibility of activity, and number or participants and then click the "Generate" button! It will load a new page that has the random activity that meets your preferences. If you do not like the activity that is generated, simply click on the "Give Me Another" button and it will generate a new idea using the same preferences you selected before. 
 
