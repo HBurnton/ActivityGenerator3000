@@ -1,6 +1,6 @@
 var searchPhrase = '';
 var activity = '';
-const googleAPIkey = 'AIzaSyC_6H4IcqUv1r-WxdCfaHGjohtT1uDhKqQ';
+var googleAPIkey = 'AIzaSyC_6H4IcqUv1r-WxdCfaHGjohtT1uDhKqQ';
 const anotherVideo = document.getElementById('anotherSuggestion');
 const viewFavorites = document.getElementById('viewFavorites');
 const randomSuggestion = document.getElementById('random');
@@ -76,6 +76,7 @@ function loadVideo() {
                 fetch(youtubeAPI())
                     .then((response) => response.json())
                     .then((data) => {
+
                         console.log(data)
                         try {
                             videoId = data.items[0].id.videoId;
@@ -84,8 +85,10 @@ function loadVideo() {
                         frameborder="0"></iframe></div>`;
                             resetButtons()
 
-                        } catch (error) {
-                            console.log(error);
+                        } catch (error) {//swaps API Key if error from over query
+                            googleAPIkey = 'AIzaSyBqZzNDB6lXVvcNSKYIvUfDFLa4A3pX-1o';
+                            loadVideo()
+                            console.log('triggered')
                         }
                     })
 
@@ -109,7 +112,7 @@ function addSuggestionToFavs() {
     window.localStorage.setItem('favoritesList', JSON.stringify(favoritesList))
 }
 
-function displayMessage(){
+function displayMessage(){ //JQUERY TOAST FROM https://kamranahmed.info/toast
     $.toast({
         text: "Video has been added to favorites", // Text that is to be shown in the toast
         heading: 'Added to Favorites', // Optional heading to be shown on the toast
