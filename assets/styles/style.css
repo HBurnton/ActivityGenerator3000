@@ -2,6 +2,7 @@ body {
     background-color: rgb(29, 29, 29);
     text-align: center;
     padding: 10px;
+    height: 100vh;
 }
 
 h1 {
@@ -31,8 +32,4 @@ button {
 label {
     color: white;
     padding: 15px;
-}
-
-title-color {
-    color: white;
 }
