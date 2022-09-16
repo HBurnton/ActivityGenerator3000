@@ -18,7 +18,7 @@ let favoritesList = [];
 
 let videoId = '';
 
-let boredAPI = "https://www.boredapi.com/api/activity/";
+let boredAPI = "http://www.boredapi.com/api/activity/";
 if(window.localStorage.getItem('boredApiUrl')){
     boredAPI = window.localStorage.getItem('boredApiUrl');
 }else{
