@@ -1,5 +1,9 @@
 # ActivityGenerator3000
 
+# READ ME
+**if Youtube video does not load, allow insecure content in browser by adjusting security settings by clicking lock icon next to url.**
+
+![alt text](./assets/Images/insecure%20allowed.png)
 # Description
 There are times when somebody knows that they want to do something, but simply have no idea what to choose. This is a problem in the modern world as the internet provides such an astonishing amount of information. This can be overwhelming. This is where the Activity Generator 3000 application comes into play. The Activity Generator 3000 is an random idea generator that not only provides the user with an activity that meets their selected criteria, but also provides a Youtube video that shows them how they might be able to get started. The user-friendly interface also sports a favorites button so that you can go back and view the video of an activity that you found enjoyable or entertaining! 
 
