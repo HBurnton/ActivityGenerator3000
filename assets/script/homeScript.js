@@ -44,7 +44,7 @@ function buildQuery(event){
 }
 
 function changePage(){
-    boredAPI = 'http://www.boredapi.com/api/activity?'+ queryString;
+    boredAPI = 'https://www.boredapi.com/api/activity?'+ queryString;
     queryString = '';
     window.localStorage.setItem('boredApiUrl', boredAPI);
     document.location = './landingpage.html';
